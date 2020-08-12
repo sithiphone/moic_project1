@@ -5,12 +5,17 @@ void main() => runApp(MaterialApp(
     appBar: AppBar(
       title: Text('Project 1'),
       centerTitle: true,
+      backgroundColor: Colors.red[500],
     ),
     body: Center(
-      child: Text('ສະບາຍດີ', style: TextStyle(fontSize: 30.0, color: Colors.deepOrange),),
+      child: Text('Hello, MOIC!', style: TextStyle(
+          fontSize: 50.0, color: Colors.deepOrange,
+          fontFamily: 'IndieFlower',
+      ),),
     ),
     floatingActionButton: FloatingActionButton(
       child: Text('Click'),
+      backgroundColor: Colors.red[500],
     ),
   ),
 ));
