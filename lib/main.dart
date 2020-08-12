@@ -15,10 +15,9 @@ class Home extends StatelessWidget{
           backgroundColor: Colors.red[500],
         ),
         body: Center(
-          child: Text('Hello, MOIC!', style: TextStyle(
-            fontSize: 50.0, color: Colors.deepOrange,
-            fontFamily: 'IndieFlower',
-          ),),
+          child: Image(
+            image: NetworkImage('https://images.unsplash.com/photo-1593994603100-9cd7cb22aaf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80'),
+          ),
         ),
         floatingActionButton: FloatingActionButton(
           child: Text('Click'),
