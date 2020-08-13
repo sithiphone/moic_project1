@@ -14,15 +14,15 @@ class Home extends StatelessWidget{
           centerTitle: true,
           backgroundColor: Colors.red[500],
         ),
-        body: Center(
-          child: ButtonTheme(
-            minWidth: 200.0,
-            height: 100.0,
-            child: RaisedButton(
-              child: Text('Click me!',style: TextStyle(color: Colors.white),),
-              onPressed: (){},
-              color: Colors.red,
-            ),
+        body: Container(
+          child: Text('Sabaidee', style: TextStyle(fontSize: 40.0, color: Colors.black),),
+//          color: Colors.blue,
+          padding: EdgeInsets.fromLTRB(20.0, 40.0, 10.0, 30.0),
+          decoration: BoxDecoration(
+              border: Border.all(
+                color: Colors.black,
+              ),
+              borderRadius: BorderRadius.all(Radius.circular(20))
           ),
         ),
         floatingActionButton: FloatingActionButton(
