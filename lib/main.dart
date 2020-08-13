@@ -15,25 +15,30 @@ class Home extends StatelessWidget{
           backgroundColor: Colors.red[500],
         ),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+          child: Row(
             children: [
-              Container(
-                child: Text("ONE", style: TextStyle(color: Colors.white),),
-                color: Colors.blue,
-                padding: EdgeInsets.all(20.0),
+              Expanded(child: Image.asset('assets/laos2.jpg')),
+              Expanded(
+                child: Container(
+                  child: Text("ONE", style: TextStyle(color: Colors.white),),
+                  color: Colors.blue,
+                  padding: EdgeInsets.all(20.0),
+                ),
               ),
-              Container(
-                child: Text("TWO", style: TextStyle(color: Colors.white),),
-                color: Colors.red,
-                padding: EdgeInsets.all(20.0),
+              Expanded(
+                child: Container(
+                  child: Text("TWO", style: TextStyle(color: Colors.white),),
+                  color: Colors.red,
+                  padding: EdgeInsets.all(20.0),
+                ),
               ),
-              Container(
-                child: Text("THREE", style: TextStyle(color: Colors.white),),
-                color: Colors.yellow,
-                padding: EdgeInsets.all(20.0),
+              Expanded(
+                child: Container(
+                  child: Text("THREE", style: TextStyle(color: Colors.white),),
+                  color: Colors.yellow,
+                  padding: EdgeInsets.all(20.0),
+                ),
               ),
-
             ],
           ),
         ),
