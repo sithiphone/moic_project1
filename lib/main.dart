@@ -14,17 +14,28 @@ class Home extends StatelessWidget{
           centerTitle: true,
           backgroundColor: Colors.red[500],
         ),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Icon(Icons.android),
-            Text('Home'),
-            Card(
-              color: Colors.blue,
-              child: Text('Car'),
-            ),
-          ],
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Container(
+                child: Text("ONE", style: TextStyle(color: Colors.white),),
+                color: Colors.blue,
+                padding: EdgeInsets.all(20.0),
+              ),
+              Container(
+                child: Text("TWO", style: TextStyle(color: Colors.white),),
+                color: Colors.red,
+                padding: EdgeInsets.all(20.0),
+              ),
+              Container(
+                child: Text("THREE", style: TextStyle(color: Colors.white),),
+                color: Colors.yellow,
+                padding: EdgeInsets.all(20.0),
+              ),
+
+            ],
+          ),
         ),
         floatingActionButton: FloatingActionButton(
           child: Text('Click'),
