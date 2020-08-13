@@ -20,7 +20,7 @@ class Home extends StatelessWidget{
           padding: EdgeInsets.fromLTRB(20.0, 40.0, 10.0, 30.0),
           decoration: BoxDecoration(
               border: Border.all(
-                color: Colors.black,
+                color: Colors.blue,
               ),
               borderRadius: BorderRadius.all(Radius.circular(20))
           ),
