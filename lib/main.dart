@@ -14,15 +14,11 @@ class Home extends StatelessWidget{
           centerTitle: true,
           backgroundColor: Colors.red[500],
         ),
-        body: Container(
-          child: Text('Sabaidee', style: TextStyle(fontSize: 40.0, color: Colors.black),),
-//          color: Colors.blue,
-          padding: EdgeInsets.fromLTRB(20.0, 40.0, 10.0, 30.0),
-          decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.blue,
-              ),
-              borderRadius: BorderRadius.all(Radius.circular(20))
+        body: Card(
+          color: Colors.blue,
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(20, 30, 20, 50),
+            child: Text("Sabaidee", style: TextStyle(color: Colors.white),),
           ),
         ),
         floatingActionButton: FloatingActionButton(
