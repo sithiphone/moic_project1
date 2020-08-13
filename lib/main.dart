@@ -15,10 +15,14 @@ class Home extends StatelessWidget{
           backgroundColor: Colors.red[500],
         ),
         body: Center(
-          child: Icon(
-            Icons.access_alarms,
-            size: 80.0,
-            color: Colors.red,
+          child: ButtonTheme(
+            minWidth: 200.0,
+            height: 100.0,
+            child: RaisedButton(
+              child: Text('Click me!',style: TextStyle(color: Colors.white),),
+              onPressed: (){},
+              color: Colors.red,
+            ),
           ),
         ),
         floatingActionButton: FloatingActionButton(
